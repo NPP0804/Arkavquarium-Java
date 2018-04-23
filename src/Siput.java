@@ -22,5 +22,3 @@ public class Siput extends BendaHidup{
         }
     }
 }
-
-
