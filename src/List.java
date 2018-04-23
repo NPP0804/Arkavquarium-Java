@@ -22,7 +22,7 @@ public class List<T> {
 
     //Menambah elemen T ke dalam list
     public void add(T info) {
-        if(first == null) { 	//Kondisi list kosong
+        if(isEmpty()) { 	//Kondisi list kosong
             first = new Element<T>(null, info);
             last = first;
         } else { 		//Kondisi list tidak kosong

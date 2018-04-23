@@ -2,7 +2,7 @@ public class Siput extends BendaHidup{
     private static final int speed = 10;
 
     public Siput(){
-        super(Akuarium.SCREEN_WIDTH/2, Akuarium.SCREEN_HEIGHT-130);
+        super(Akuarium.SCREEN_WIDTH/2, Akuarium.SCREEN_HEIGHT-50);
     }
 
     @Override
@@ -18,7 +18,7 @@ public class Siput extends BendaHidup{
         }
 	    else if(x < this.x){
             this.x -= t*speed;
-            //this.setDirection(M_PI);
+            this.setDirection(Math.PI);
         }
     }
 }

@@ -47,7 +47,11 @@ public class Piranha extends Ikan {
      * @param times
      */
     public void moveTowardsTarget(double x, double y, double times) { //gerak arah x selama time
-        super.setDirection(atan2(y-this.y, x-this.x));
+        double dir =  Math.atan2(y-this.y, x-this.x);
+        if (dir<0) {
+            dir = dir + 2*Math.PI;
+        }
+        super.setDirection(dir);
         this.x += speed*cos(super.getDirection())*times;
         this.y += speed*sin(super.getDirection())*times;
     }

@@ -1,16 +1,24 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.lang.Math.PI;
+import static java.lang.Math.floor;
+
 public class Controller extends JPanel {
     private Akuarium tank;
     private int uang;
     private int levelTelur;
+    private int winningState;
     private Map<String, BufferedImage> images;
 
     public static final double TIMESTAMP_IKAN = 0.02;
@@ -30,18 +38,16 @@ public class Controller extends JPanel {
 
     private JFrame jFrame;
 
-    public Controller(){
+    public Controller() {
         this.tank = new Akuarium();
         uang = 800;
         levelTelur = 0;
         images = new HashMap<>();
+        winningState = 0;
 
-        jFrame = new JFrame();
-        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        jFrame.setSize(Akuarium.SCREEN_WIDTH, Akuarium.SCREEN_HEIGHT);
-        jFrame.setVisible(true);
-        jFrame.setContentPane(this);
+        initiateJFrame();
     }
+
     public void processAkuarium(){
         tank.updateAkuarium();
         processPiranha();
@@ -79,10 +85,10 @@ public class Controller extends JPanel {
 
                 //jika nabrak tembok
                 if(g.getX() <= 0 || g.getY() <= 0 || g.getX() >= Akuarium.SCREEN_WIDTH || g.getY() >= Akuarium.SCREEN_HEIGHT-50){
-                    if (g.getDirection()>=Math.PI) {
-                        g.setDirection(g.getDirection()-Math.PI);
+                    if (g.getDirection()>=PI) {
+                        g.setDirection(g.getDirection()-PI);
                     } else {
-                        g.setDirection(g.getDirection()+Math.PI);
+                        g.setDirection(g.getDirection()+PI);
                     }
                 }
 
@@ -123,10 +129,10 @@ public class Controller extends JPanel {
 
                 //jika nabrak tembok
                 if(p.getX() <= 0 || p.getY() <= 0 || p.getX() >= Akuarium.SCREEN_WIDTH || p.getY() >= Akuarium.SCREEN_HEIGHT-50){
-                    if (p.getDirection()>=Math.PI) {
-                        p.setDirection(p.getDirection()-Math.PI);
+                    if (p.getDirection()>=PI) {
+                        p.setDirection(p.getDirection()-PI);
                     } else {
-                        p.setDirection(p.getDirection()+Math.PI);
+                        p.setDirection(p.getDirection()+PI);
                     }
                 }
             } while(temp != null);
@@ -202,15 +208,28 @@ public class Controller extends JPanel {
 
     public void generateAkuarium() {
         this.addGuppy();
-        this.addGuppy();
+
+        long lastFrameStart = System.nanoTime();
+        long now;
 
         boolean running = true;
 
         while (running) {
-            processAkuarium();
-            jFrame.invalidate();
-            jFrame.validate();
-            jFrame.repaint();
+            now = System.nanoTime();
+            if ((now - lastFrameStart) >= 1000000000L/(256+128)) {
+                processAkuarium();
+                jFrame.invalidate();
+                jFrame.validate();
+                jFrame.repaint();
+                lastFrameStart = now;
+
+                if (getAkuarium().getListGuppy().isEmpty() &&
+                        getAkuarium().getListPiranha().isEmpty() && uang<HARGA_GUPPY && winningState==0) {
+                    winningState = -1;
+                } else if (levelTelur == 3 && winningState==0) {
+                    winningState = 1;
+                }
+            }
         }
 
     }
@@ -228,6 +247,69 @@ public class Controller extends JPanel {
         return choosenImage;
     }
 
+    public void initiateJFrame() {
+        jFrame = new JFrame();
+        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        jFrame.setSize(Akuarium.SCREEN_WIDTH, Akuarium.SCREEN_HEIGHT);
+        jFrame.setVisible(true);
+        jFrame.setContentPane(this);
+
+        jFrame.getContentPane().setFocusable(true);
+        jFrame.getContentPane().requestFocusInWindow();
+
+        jFrame.getContentPane().addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                int keyCode = e.getKeyCode();
+                //System.out.println(e.getKeyChar());
+                if (keyCode == KeyEvent.VK_P) {
+                    if (uang >= HARGA_PIRANHA) {
+                        addPiranha();
+                        }
+                } else if (keyCode == KeyEvent.VK_N) {
+                    if (uang >= HARGA_GUPPY) {
+                        addGuppy();
+                    }
+                } else if (keyCode == KeyEvent.VK_M) {
+                    if (uang >= HARGA_MAKANAN) {
+                        addMakanan(Akuarium.SCREEN_WIDTH/2);
+                    }
+                } else if (keyCode == KeyEvent.VK_T) {
+                    if (levelTelur == 0) {
+                        if (uang >= HARGA_TELUR1) {
+                            levelTelur++;
+                            uang -= HARGA_TELUR1;
+                        }
+                    } else if (levelTelur == 1) {
+                        if (uang >= HARGA_TELUR2) {
+                            levelTelur++;
+                            uang -= HARGA_TELUR2;
+                        }
+                    } else if (levelTelur == 2) {
+                        if (uang >= HARGA_TELUR3) {
+                            levelTelur++;
+                            uang -= HARGA_TELUR3;
+                        }
+                    }
+                }
+
+            }
+        });
+
+        jFrame.getContentPane().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                double mouseX = e.getLocationOnScreen().getX();
+                if (uang >= HARGA_MAKANAN) {
+                    addMakanan(mouseX);
+                }
+
+            }
+        });
+    }
+
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -237,44 +319,135 @@ public class Controller extends JPanel {
         //gambar background
         g.drawImage(readImage("Images/background.png"), 0, 0, null);
 
+        //Gambar Tulisan
+
+        String amountKoin = "Koin : " + uang;
+        String amountTelur = "Level Telur : " + levelTelur;
+        String priceInfo = "Food : " + HARGA_MAKANAN + " - M | Guppy : " + HARGA_GUPPY + " - N" + " | Piranha : " + HARGA_PIRANHA + " - P";
+        priceInfo = priceInfo + " | Telur : ";
+        if (levelTelur == 0) {
+            priceInfo += HARGA_TELUR1;
+        } else if (levelTelur == 1) {
+            priceInfo += HARGA_TELUR2;
+        } else if (levelTelur == 2) {
+            priceInfo += HARGA_TELUR3;
+        }
+        priceInfo += " - T";
+
+        g.drawString(amountKoin, 0,10);
+        g.drawString(amountTelur, Akuarium.SCREEN_WIDTH-95, 10);
+        g.drawString(priceInfo, 130, 10);
+
         //gambar siput
-        g.drawImage(readImage("Images/siputkiri.png"), (int)Math.floor(tank.getSiput().getX()), (int)Math.floor(tank.getSiput().getY()), null);
+        if ((tank.getSiput().getDirection()>=0 &&  tank.getSiput().getDirection()<0.5*PI) ||
+                (tank.getSiput().getDirection()>=1.5*PI &&  tank.getSiput().getDirection()<2*PI)) {
+            g.drawImage(readImage("Images/siputkanan.png"), (int)floor(tank.getSiput().getX()), (int)floor(tank.getSiput().getY())-55, null);
+        } else {
+            g.drawImage(readImage("Images/siputkiri.png"), (int) floor(tank.getSiput().getX()), (int) floor(tank.getSiput().getY())-55, null);
+        }
 
         //gambar ikan
         if (!tank.getListGuppy().isEmpty()) {
-            Element<Guppy> currentGuppy = tank.getListGuppy().getFirst();
+            Element<Guppy> currentGuppy = tank.getListGuppy().first;
             while (currentGuppy != null) {
-                g.drawImage(readImage("Images/guppy1kiri.png"), (int)Math.floor(currentGuppy.getInfo().getX()), (int)Math.floor(currentGuppy.getInfo().getY()), null);
+                System.out.println(currentGuppy.getInfo().getDirection());
+                if ((currentGuppy.getInfo().getDirection()>=0 &&  currentGuppy.getInfo().getDirection()<0.5*PI) ||
+                        (currentGuppy.getInfo().getDirection()>=1.5*PI &&  currentGuppy.getInfo().getDirection()<2*PI)) { //Hadap kanan
+                    if (currentGuppy.getInfo().getTahap()==1) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy1laparkanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy1kanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        }
+                    } else if (currentGuppy.getInfo().getTahap() == 2) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy2laparkanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy2kanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        }
+                    } else if (currentGuppy.getInfo().getTahap() == 3) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy3laparkanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55,null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy3kanan.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55,null);
+                        }
+                    }
+                } else { //Hadap kiri
+                    if (currentGuppy.getInfo().getTahap()==1) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy1laparkiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy1kiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        }
+                    } else if (currentGuppy.getInfo().getTahap() == 2) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy2laparkiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy2kiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        }
+                    } else if (currentGuppy.getInfo().getTahap() == 3) {
+                        if (currentGuppy.getInfo().getHungerState()) { //guppy lapar
+                            g.drawImage(readImage("Images/guppy3laparkiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        } else {
+                            g.drawImage(readImage("Images/guppy3kiri.png"), (int)floor(currentGuppy.getInfo().getX()), (int)floor(currentGuppy.getInfo().getY())-55, null);
+                        }
+                    }
+                }
+
                 currentGuppy = currentGuppy.getNext();
             }
         }
 
         //gambar piranha
         if (!tank.getListPiranha().isEmpty()) {
-            Element<Piranha> currentPiranha = tank.getListPiranha().getFirst();
+            Element<Piranha> currentPiranha = tank.getListPiranha().first;
             while (currentPiranha != null) {
-                g.drawImage(readImage("Images/piranhakiri.png"), (int)Math.floor(currentPiranha.getInfo().getX()), (int)Math.floor(currentPiranha.getInfo().getY()), null);
+                if ((currentPiranha.getInfo().getDirection()>=0 &&  currentPiranha.getInfo().getDirection()<0.5*PI) ||
+                        (currentPiranha.getInfo().getDirection()>=1.5*PI &&  currentPiranha.getInfo().getDirection()<2*PI)) { //Hadap kanan
+                    if (currentPiranha.getInfo().getHungerState()) { //Piranha lapar
+                        g.drawImage(readImage("Images/Piranhalaparkanan.png"), (int)floor(currentPiranha.getInfo().getX()), (int)floor(currentPiranha.getInfo().getY())-55, null);
+                    } else {
+                        g.drawImage(readImage("Images/Piranhakanan.png"), (int)floor(currentPiranha.getInfo().getX()), (int)floor(currentPiranha.getInfo().getY())-55, null);
+                    }
+                } else {
+                    if (currentPiranha.getInfo().getHungerState()) { //Piranha lapar
+                        g.drawImage(readImage("Images/Piranhalaparkiri.png"), (int)floor(currentPiranha.getInfo().getX()), (int)floor(currentPiranha.getInfo().getY())-55, null);
+                    } else {
+                        g.drawImage(readImage("Images/Piranhakiri.png"), (int)floor(currentPiranha.getInfo().getX()), (int)floor(currentPiranha.getInfo().getY())-55, null);
+                    }
+                }
                 currentPiranha = currentPiranha.getNext();
             }
         }
 
-        //gambar makanan
         if (!tank.getListMakanan().isEmpty()) {
-            Element<Makanan> currentMakanan = tank.getListMakanan().getFirst();
-            while (currentMakanan != null) {
-                g.drawImage(readImage("Images/upil.png"), (int)Math.floor(currentMakanan.getInfo().getX()), (int)Math.floor(currentMakanan.getInfo().getY()), null);
-                currentMakanan = currentMakanan.getNext();
+            Element<Makanan> currentFood = tank.getListMakanan().first;
+            while (currentFood != null) {
+                g.drawImage(readImage("Images/food.png"), (int)floor(currentFood.getInfo().getX()), (int)floor(currentFood.getInfo().getY())-25, null);
+                currentFood = currentFood.getNext();
             }
         }
 
-        //gambar koin
         if (!tank.getListKoin().isEmpty()) {
-            System.out.println("ASO");
-            Element<Koin> currentKoin = tank.getListKoin().getFirst();
-            while (currentKoin != null) {
-                g.drawImage(readImage("Images/koin1.png"), (int)Math.floor(currentKoin.getInfo().getX()), (int)Math.floor(currentKoin.getInfo().getY()), null);
-                currentKoin = currentKoin.getNext();
+            Element<Koin> temp = tank.getListKoin().first;
+            while (temp != null) {
+                if (temp.getInfo().getNilai() == NILAI_KOIN_TAHAP1) {
+                    g.drawImage(readImage("Images/Koin1.png"), (int)floor(temp.getInfo().getX()), (int)floor(temp.getInfo().getY())-30, null);
+                } else if (temp.getInfo().getNilai() == NILAI_KOIN_TAHAP2) {
+                    g.drawImage(readImage("Images/Koin2.png"), (int)floor(temp.getInfo().getX()), (int)floor(temp.getInfo().getY())-30,  null);
+                } else if (temp.getInfo().getNilai()  == NILAI_KOIN_TAHAP3) {
+                    g.drawImage(readImage("Images/Diamond.png"), (int)floor(temp.getInfo().getX()), (int)floor(temp.getInfo().getY())-30, null);
+                }
+                temp = temp.getNext();
             }
         }
+
+        if (winningState==1) {
+            g.drawImage(readImage("Images/win.png"), Akuarium.SCREEN_WIDTH/2-200, Akuarium.SCREEN_HEIGHT/2-50, null);
+        } else if (winningState==-1) {
+            g.drawImage(readImage("Images/lose.png"), Akuarium.SCREEN_WIDTH/2-200, Akuarium.SCREEN_HEIGHT/2-50, null);
+        }
+
+
     }
 }

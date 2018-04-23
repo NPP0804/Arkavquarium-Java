@@ -14,7 +14,7 @@ public abstract class BendaHidup implements Entitas {
     public BendaHidup() {
         Random rand = new Random(System.currentTimeMillis());
         x = rand.nextInt(Akuarium.SCREEN_WIDTH);
-        y = rand.nextInt(Akuarium.SCREEN_HEIGHT);
+        y = rand.nextInt(Akuarium.SCREEN_HEIGHT-51);
         direction = 0;
     }
 
