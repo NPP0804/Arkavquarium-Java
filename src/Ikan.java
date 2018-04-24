@@ -1,6 +1,6 @@
 import java.util.Random;
 
-@SuppressWarnings("CheckStyle")
+@SuppressWarnings({"CheckStyle", "WeakerAccess"})
 public abstract class Ikan extends BendaHidup {
   private static final int GUPPY_HUNGER = 4000;
   private static final int GUPPY_MIN_HUNGER_STATE = 2500;
