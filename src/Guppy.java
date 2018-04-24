@@ -37,8 +37,8 @@ public class Guppy extends Ikan {
             Random rand = new Random(System.currentTimeMillis());
             direction = Math.toRadians(rand.nextInt(360));
         }
-        x += speed*Math.cos(super.getDirection())*times;
-        y += speed*Math.sin(super.getDirection())*times;
+        setX(getX() + speed*Math.cos(super.getDirection())*times);
+        setY(getY() + speed*Math.sin(super.getDirection())*times);
         koinCounter--;
     }
 
@@ -54,8 +54,8 @@ public class Guppy extends Ikan {
             dir = dir + 2*Math.PI;
         }
         super.setDirection(dir);
-        this.x += speed*Math.cos(super.getDirection())*times;
-        this.y += speed*Math.sin(super.getDirection())*times;
+        setX(getX()+speed*Math.cos(super.getDirection())*times);
+        setY(getY()+speed*Math.sin(super.getDirection())*times);
         koinCounter--;
     }
 
