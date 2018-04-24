@@ -13,7 +13,7 @@ public abstract class Ikan extends BendaHidup {
   protected int moveCounter;
   
   /**
-   * Class Constructor
+   * Class Constructor.
    */
   public Ikan() {
     super();
@@ -27,12 +27,12 @@ public abstract class Ikan extends BendaHidup {
   }
   
   /**
-   * Class Constructor depends on two parameters, absis and ordinate
-   * @param X Absis of Ikan
-   * @param Y Ordinate of Ikan
+   * Class Constructor depends on two parameters, absis and ordinate.
+   * @param x Absis of Ikan.
+   * @param y Ordinate of Ikan.
    */
-  public Ikan(double X, double Y) {
-    super(X,Y);
+  public Ikan(double x, double y) {
+    super(x,y);
     hunger = GUPPY_HUNGER;
     tahap = 1;
     foodCounter = 0;
@@ -43,79 +43,79 @@ public abstract class Ikan extends BendaHidup {
   }
   
   /**
-   * Hunger Getter
-   * @return hunger of Ikan
+   * Hunger Getter.
+   * @return hunger of Ikan.
    */
   public int getHunger() {
     return hunger;
   }
   
   /**
-   * Tahap Getter
-   * @return tahap of Ikan (1-3)
+   * Tahap Getter.
+   * @return tahap of Ikan (1-3).
    */
   public int getTahap() {
     return tahap;
   }
   
   /**
-   * FoodCounter Getter
-   * @return foodCounter of Ikan
+   * FoodCounter Getter.
+   * @return foodCounter of Ikan.
    */
   public int getFoodCounter() {
     return foodCounter;
   }
   
   /**
-   * Mati Getter
-   * @return mati of Ikan (true or false)
+   * Mati Getter.
+   * @return mati of Ikan (true or false).
    */
   public boolean isMati() {
     return mati;
   }
   
   /**
-   * HungerState Getter
-   * @return hungerState of Ikan
+   * HungerState Getter.
+   * @return hungerState of Ikan.
    */
   public boolean getHungerState() {
     return hungerState;
   }
   
   /**
-   * MoveCounter Getter
-   * @return moveCounter of Ikan
+   * MoveCounter Getter.
+   * @return moveCounter of Ikan.
    */
   public int getMoveCounter() {
     return moveCounter;
   }
   
   /**
-   * Hunger Setter
-   * @param hunger degree of Ikan
+   * Hunger Setter.
+   * @param hunger degree of Ikan.
    */
   public void setHunger(int hunger) {
     this.hunger = hunger;
   }
   
   /**
-   * Tahap Setter
-   * @param tahap of Ikan, limited from 1 - 3
+   * Tahap Setter.
+   * @param tahap of Ikan, limited from 1 - 3.
    */
   public void setTahap(int tahap) {
     this.tahap = tahap;
   }
   
   /**
-   * FoodCounter Setter
-   * @param foodCounter of Ikan, counting how many food the Ikan had eaten
+   * FoodCounter Setter.
+   * @param foodCounter of Ikan, counting how many food the Ikan had eaten.
    */
   public void setFoodCounter(int foodCounter) {
     this.foodCounter = foodCounter;
   }
   
   /**
-   * Mati Setter
+   * Mati Setter.
    * @param mati of Ikan, set true if Ikan is already died.
    */
   public void setMati(boolean mati) {
@@ -123,7 +123,7 @@ public abstract class Ikan extends BendaHidup {
   }
   
   /**
-   * HungerState setter, set true if Ikan's hunger less than minimum
+   * HungerState setter, set true if Ikan's hunger less than minimum.
    */
   public void setHungerState() {
     hunger--;
@@ -131,7 +131,7 @@ public abstract class Ikan extends BendaHidup {
   }
   
   /**
-   * Controlling how Ikan moves. If new moveCounter < 0, it creates new direction
+   * Controlling how Ikan moves. If new moveCounter < 0, it creates new direction.
    */
   public void decCounter() {
     moveCounter--;
