@@ -20,6 +20,7 @@ public class Controller extends JPanel {
   private int levelTelur;
   private int winningState;
   private Map<String, BufferedImage> images;
+  private final long fps;
 
   public static final double TIMESTAMP_IKAN = 0.02;
   public static final double TIMESTAMP_MAKANAN = 0.01;
@@ -43,7 +44,8 @@ public class Controller extends JPanel {
       uang = 800;
       levelTelur = 0;
       images = new HashMap<>();
-      winningState = 0;
+      winningState = -2;
+      fps = 1000000000L/(256+128);
 
       initiateJFrame();
   }
@@ -209,9 +211,17 @@ public class Controller extends JPanel {
         long lastFrameStart = System.nanoTime();
         long now;
 
-        while (true) {
+        boolean running = true;
+
+        while (winningState == -2) {
+          jFrame.invalidate();
+          jFrame.validate();
+          jFrame.repaint();
+        }
+
+        while (winningState>=-1 && winningState<=1) {
             now = System.nanoTime();
-            if ((now - lastFrameStart) >= 1000000000L/(256+128)) {
+            if ((now - lastFrameStart) >= fps) {
                 processAkuarium();
                 jFrame.invalidate();
                 jFrame.validate();
@@ -257,7 +267,6 @@ public class Controller extends JPanel {
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
                 int keyCode = e.getKeyCode();
-                //System.out.println(e.getKeyChar());
                 if (keyCode == KeyEvent.VK_P) {
                     if (uang >= HARGA_PIRANHA) {
                         addPiranha();
@@ -287,6 +296,10 @@ public class Controller extends JPanel {
                             uang -= HARGA_TELUR3;
                         }
                     }
+                } else if (keyCode == KeyEvent.VK_ENTER) {
+                  if (winningState == -2) {
+                    winningState = 0;
+                  }
                 }
 
             }
@@ -345,7 +358,6 @@ public class Controller extends JPanel {
       if (!tank.getListGuppy().isEmpty()) {
         Element<Guppy> currentGuppy = tank.getListGuppy().first;
         while (currentGuppy != null) {
-          System.out.println(currentGuppy.getInfo().getDirection());
           if ((currentGuppy.getInfo().getDirection() >= 0 && currentGuppy.getInfo().getDirection() < 0.5 * PI) ||
             (currentGuppy.getInfo().getDirection() >= 1.5 * PI && currentGuppy.getInfo().getDirection() < 2 * PI)) { //Hadap kanan
             if (currentGuppy.getInfo().getTahap() == 1) {
@@ -440,6 +452,9 @@ public class Controller extends JPanel {
         g.drawImage(readImage("Images/win.png"), Akuarium.SCREEN_WIDTH / 2 - 200, Akuarium.SCREEN_HEIGHT / 2 - 50, null);
       } else if (winningState == -1) {
         g.drawImage(readImage("Images/lose.png"), Akuarium.SCREEN_WIDTH / 2 - 200, Akuarium.SCREEN_HEIGHT / 2 - 50, null);
+      } else if (winningState == -2) {
+        g.drawImage(readImage("Images/menu.png"), 0, 0, null);
+        g.drawImage(readImage("Images/enter.png"), Akuarium.SCREEN_WIDTH / 2 - 265, Akuarium.SCREEN_HEIGHT / 2 + 100, null);
       }
   }
 }
