@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5c1b120-6915-4974-bc60-875908c28eea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ikan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ikan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Koin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makanan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makanan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,33 +29,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ikan.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ikan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ikan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="51">
+              <caret line="127" column="25" lean-forward="true" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
               <folding>
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#1611#1612#0" expanded="true" />
-                <element signature="e#1639#1640#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1762#1763#0" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#2002#2003#0" expanded="true" />
-                <element signature="e#2030#2031#0" expanded="true" />
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
-                <element signature="e#2281#2282#0" expanded="true" />
-                <element signature="e#2309#2310#0" expanded="true" />
-                <element signature="e#2470#2471#0" expanded="true" />
-                <element signature="e#2510#2511#0" expanded="true" />
-                <element signature="e#2640#2641#0" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
+                <element signature="e#9848#10174#0" expanded="true" />
+                <element signature="e#10173#10174#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Siput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Siput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makanan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Makanan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+              <folding>
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Koin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Koin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -69,6 +95,9 @@
         <option value="$PROJECT_DIR$/src/Element.java" />
         <option value="$PROJECT_DIR$/src/ElementTest.java" />
         <option value="$PROJECT_DIR$/src/Ikan.java" />
+        <option value="$PROJECT_DIR$/src/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Makanan.java" />
+        <option value="$PROJECT_DIR$/src/Koin.java" />
       </list>
     </option>
   </component>
@@ -82,18 +111,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Arkavquarium-Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arkavquarium-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="arkavquarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arkavquarium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Arkavquarium-Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arkavquarium-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="arkavquarium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="arkavquarium" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -206,50 +236,53 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.3290938" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.1522694" side_tool="true" visible="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="CheckStyle" order="7" sideWeight="0.49926794" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" sideWeight="0.49853587" weight="0.3290938" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.8477306" weight="0.3290938" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.49926794" weight="0.3290938" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Ikan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Element.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -271,15 +304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -315,9 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -337,30 +358,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ikan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="51">
+          <caret line="127" column="25" lean-forward="true" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
           <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#2002#2003#0" expanded="true" />
-            <element signature="e#2030#2031#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2281#2282#0" expanded="true" />
-            <element signature="e#2309#2310#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
+            <element signature="e#9848#10174#0" expanded="true" />
+            <element signature="e#10173#10174#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Siput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Makanan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Koin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -2,13 +2,6 @@ public class Koin extends BendaMati {
   private int nilai;
 
   /**
-   * Default constructor.
-   */
-  public Koin(){
-
-  }
-
-  /**
    * User Defined constructor.
    * @param x Define absis of Koin.
    * @param y Define ordinate of Koin.

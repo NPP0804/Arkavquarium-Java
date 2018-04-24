@@ -2,13 +2,6 @@ public class Makanan extends BendaMati {
   private boolean edible;
 
   /**
-   * Default constructor.
-   */
-  public Makanan(){
-
-  }
-
-  /**
    * User Defined constructor.
    * @param x Define absis of Makanan.
    * @param y Define ordinate of Makanan.
