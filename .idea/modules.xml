@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/arkavquarium.iml" filepath="$PROJECT_DIR$/arkavquarium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arkavquarium-Java.iml" filepath="$PROJECT_DIR$/Arkavquarium-Java.iml" />
     </modules>
   </component>
 </project>
