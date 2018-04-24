@@ -301,7 +301,6 @@ public class Controller extends JPanel {
                     winningState = 0;
                   }
                 }
-
             }
         });
 
@@ -309,7 +308,7 @@ public class Controller extends JPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                double mouseX = e.getLocationOnScreen().getX();
+                double mouseX = e.getX();
                 if (uang >= HARGA_MAKANAN) {
                     addMakanan(mouseX);
                 }
