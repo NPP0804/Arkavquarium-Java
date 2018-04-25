@@ -47,32 +47,32 @@ public class Akuarium {
     }
 
     /**
-     * Getter for ordinate screen size
-     * @return ukuranY instance of integer
+     * Getter for ordinate screen size.
+     * @return ukuranY instance of integer.
      */
     public int getY(){
         return ukuranY;
     }
 
     /**
-     * Getter for list of makanan
-     * @return listMakanan instance of List<Makanan>
+     * Getter for list of makanan.
+     * @return listMakanan instance of List of Makanan.
      */
     public List<Makanan> getListMakanan(){
         return listMakanan;
     }
 
     /**
-     * Getter for list of guppy
-     * @return listGuppy instance of List<Guppy>
+     * Getter for list of guppy.
+     * @return listGuppy instance of List of Guppy.
      */
     public List<Guppy> getListGuppy(){
         return listGuppy;
     }
 
     /**
-     * Getter for list of piranha
-     * @return listPiranha instance of List<Piranha>
+     * Getter for list of piranha.
+     * @return listPiranha instance of List of Piranha.
      */
     public List<Piranha> getListPiranha(){
         return listPiranha;
@@ -80,7 +80,7 @@ public class Akuarium {
 
     /**
      * Getter for list of koin
-     * @return listKoin instance of List<Koin>
+     * @return listKoin instance of List of Koin.
      */
     public List<Koin> getListKoin(){
         return listKoin;
