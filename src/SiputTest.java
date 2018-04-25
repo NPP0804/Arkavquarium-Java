@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SiputTest {
-  private Siput s1;
+  private Siput s1 = new Siput();
 
   @Test
   public void moveTowardsTarget() {
