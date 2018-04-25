@@ -1,12 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5c1b120-6915-4974-bc60-875908c28eea" name="Default" comment="">
+    <list default="true" id="cb186833-108c-4067-9d2d-c984fc07002f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/.idea/checkstyleidea-libs/lib/opentest4j-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/hashed/jnyxivlc2j2bboyd56z6flfdi772qmjo/apiguardian-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/hashed/jnyxivlc2j2bboyd56z6flfdi772qmjo/junit-jupiter-api-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/hashed/jnyxivlc2j2bboyd56z6flfdi772qmjo/junit-platform-commons-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/lib/apiguardian-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/lib/junit-jupiter-api-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/lib/junit-platform-commons-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/lib/opentest4j-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arkavquarium-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Arkavquarium-Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/Diamond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/enter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/food.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy1kanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy1kiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy1laparkanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy1laparkiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy2kanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy2kiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy2laparkanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy2laparkiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy3kanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy3kiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy3laparkanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppy3laparkiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppykanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/guppykiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/ikan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/koin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/koin1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/koin2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/lose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/piranhakanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/piranhakiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/piranhalaparkanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/piranhalaparkiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/pointer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/siputkanan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/siputkiri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/snail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/upil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arkavquarium/Images/win.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Akuarium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Akuarium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ikan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ikan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Koin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makanan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makanan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,21 +72,58 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BendaMati.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BendaMati.java">
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="85">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BendaHidup.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BendaHidup.java">
+      <file leaf-file-name="Makanan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Makanan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state>
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+              <folding>
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Akuarium.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Akuarium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ikan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ikan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Koin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Koin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -51,12 +136,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Element.java" />
-        <option value="$PROJECT_DIR$/src/ElementTest.java" />
-        <option value="$PROJECT_DIR$/src/Ikan.java" />
         <option value="$PROJECT_DIR$/src/Makanan.java" />
+        <option value="$PROJECT_DIR$/src/Akuarium.java" />
+        <option value="$PROJECT_DIR$/src/Ikan.java" />
         <option value="$PROJECT_DIR$/src/Koin.java" />
-        <option value="$PROJECT_DIR$/src/Controller.java" />
       </list>
     </option>
   </component>
@@ -71,17 +154,21 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="arkavquarium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arkavquarium" type="462c0819:PsiDirectoryNode" />
+              <item name="Arkavquarium-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arkavquarium-java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="arkavquarium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arkavquarium" type="462c0819:PsiDirectoryNode" />
+              <item name="Arkavquarium-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arkavquarium-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jdoc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Arkavquarium-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Arkavquarium-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -90,10 +177,6 @@
       </pane>
       <pane id="PackagesPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,25 +191,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Arkavquarium-java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Arkavquarium-Java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ElementTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -168,7 +239,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ElementTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -177,51 +248,39 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d5c1b120-6915-4974-bc60-875908c28eea" name="Default" comment="" />
-      <created>1524593956706</created>
+      <changelist id="cb186833-108c-4067-9d2d-c984fc07002f" name="Default" comment="" />
+      <created>1524648128843</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1524593956706</updated>
+      <updated>1524648128843</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="ElementTest - 2018.04.25 at 01h 21m 07s.xml">
-      <configuration name="ElementTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElementTest - 2018.04.25 at 01h 22m 32s.xml">
-      <configuration name="ElementTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014641" side_tool="true" visible="true" weight="0.3290938" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.3290938" />
-      <window_info anchor="bottom" id="CheckStyle" order="7" sideWeight="0.49853587" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection Results" order="7" sideWeight="0.8477306" weight="0.3290938" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -230,204 +289,69 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Ikan.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaMati.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaHidup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaMatiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Siput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Makanan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state>
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Koin.java">
+    <entry file="file://$PROJECT_DIR$/src/Akuarium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4981">
-          <caret line="293" column="51" lean-forward="true" selection-start-line="293" selection-start-column="51" selection-end-line="293" selection-end-column="51" />
+        <state relative-caret-position="255">
+          <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ikan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ElementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Guppy.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="133" column="62" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ElementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Guppy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GuppyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piranha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PiranhaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Siput.java">
+    <entry file="file://$PROJECT_DIR$/jdoc/Akuarium.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Koin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="652" column="22" lean-forward="true" selection-start-line="652" selection-start-column="22" selection-end-line="652" selection-end-column="22" />
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaMatiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="302" column="17" lean-forward="true" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ikan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="127" column="25" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaMati.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Makanan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BendaHidup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

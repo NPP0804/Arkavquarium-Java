@@ -131,7 +131,7 @@ public abstract class Ikan extends BendaHidup {
   }
   
   /**
-   * Controlling how Ikan moves. If new moveCounter < 0, it creates new direction.
+   * Controlling how Ikan moves. If new moveCounter less than 0, it creates new direction.
    */
   public void decCounter() {
     moveCounter--;
