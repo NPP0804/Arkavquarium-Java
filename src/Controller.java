@@ -39,6 +39,9 @@ public class Controller extends JPanel {
 
   private JFrame jFrame;
 
+    /**
+     * Default class constructor
+     */
   public Controller() {
     this.tank = new Akuarium();
       uang = 800;
@@ -50,6 +53,25 @@ public class Controller extends JPanel {
       initiateJFrame();
   }
 
+    /**
+     * Class constructor with parameter
+     * @param a instance of Akuarium, the akuarium that will be controlled by this class
+     */
+  public Controller(Akuarium a){
+      tank = a;
+      uang = 800;
+      levelTelur = 0;
+      images = new HashMap<>();
+      winningState = -2;
+      fps = 1000000000L/(256+128);
+
+      initiateJFrame();
+
+  }
+
+    /**
+     * Processing every object in akuarium
+     */
   public void processAkuarium(){
     tank.updateAkuarium();
     processPiranha();
@@ -59,10 +81,17 @@ public class Controller extends JPanel {
     processKoin();
   }
 
+    /**
+     * Getter for attribute tank (instance of akuarium)
+     * @return tank instance of akuarium
+     */
   public Akuarium getAkuarium(){
         return tank;
     }
 
+    /**
+     * Processing every guppy in akuarium
+     */
   public void processGuppy(){
     if(!tank.getListGuppy().isEmpty()){
       Element<Guppy> temp = tank.getListGuppy().first;
@@ -106,6 +135,9 @@ public class Controller extends JPanel {
     }
   }
 
+    /**
+     * Processing every piranha in akuarium
+     */
   public void processPiranha(){
     if(!tank.getListPiranha().isEmpty()){
       Element<Piranha> temp = tank.getListPiranha().first;
@@ -139,6 +171,10 @@ public class Controller extends JPanel {
       } while(temp != null);
     }
   }
+
+    /**
+     * Processing every makanan in akuarium
+     */
   public void processMakanan(){
     if (!tank.getListMakanan().isEmpty()) {
       Element<Makanan> temp = tank.getListMakanan().first;
@@ -149,6 +185,9 @@ public class Controller extends JPanel {
     }
   }
 
+    /**
+     * Processing siput in akuarium
+     */
   public void processSiput(){
     if(tank.koinAvailable()){
       Koin k = tank.searchKoin(tank.getSiput().getX(), tank.getSiput().getY());
@@ -167,6 +206,9 @@ public class Controller extends JPanel {
     }
   }
 
+    /**
+     * Processing every koin in akuarium
+     */
   public void processKoin(){
     if (!tank.getListKoin().isEmpty()) {
       Element<Koin> temp = tank.getListKoin().first;
@@ -181,24 +223,39 @@ public class Controller extends JPanel {
     }
   }
 
-
+    /**
+     * Method for adding koin to akuarium
+     * @param x absis of koin
+     * @param y ordinate of koin
+     * @param nilai value of koin
+     */
   public void addKoin(double x, double y, int nilai){
     Koin k = new Koin(x,y,nilai);
     tank.getListKoin().add(k);
   }
 
+    /**
+     * method for adding guppy to akuarium
+     */
   public void addGuppy(){
         Guppy g = new Guppy();
         tank.getListGuppy().add(g);
         uang -= HARGA_GUPPY;
     }
 
+    /**
+     * method for adding piranha to akuarium
+     */
     public void addPiranha(){
         Piranha p = new Piranha();
         tank.getListPiranha().add(p);
         uang -= HARGA_PIRANHA;
     }
 
+    /**
+     * method for adding makanan to akuarium
+     * @param x is absis of makanan
+     */
     public void addMakanan(double x){
         Makanan m = new Makanan(x,0);
         tank.getListMakanan().add(m);
