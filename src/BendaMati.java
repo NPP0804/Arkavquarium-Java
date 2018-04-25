@@ -2,7 +2,7 @@
 public class BendaMati implements Entitas {
   protected final double x;
   protected double y;
-  protected static final double speed = 10;
+  protected static final double speed = 20;
 
   /**
    * Default constructor.

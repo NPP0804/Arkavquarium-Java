@@ -39,14 +39,18 @@ public class Koin extends BendaMati {
   }
 
   /**
-   * Implementasi Operator==.
+   * Implementing Operator==.
+   * @param k koin that need to be compared.
+   * @return true if k equals Koin
    */
   public boolean isSama(Koin k) {
     return (getX() == k.getX() && getY() == k.getY() && getNilai() == k.getNilai());
   }
-
+  
   /**
-   * Implementasi Operator!=.
+   * Implementing Operator!=.
+   * @param k koin that need to be compared.
+   * @return true if k not equals Koin
    */
   public boolean isBeda(Koin k) {
     return (getX() != k.getX() || getY() != k.getY() || getNilai() != k.getNilai());

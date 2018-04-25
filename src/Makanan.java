@@ -13,7 +13,7 @@ public class Makanan extends BendaMati {
 
   /**
    * Getter edible.
-   * Return status apakah bisa dimakan.
+   * @return true if Makanan is edible.
    */
   public boolean isEdible() {
     return edible;
@@ -21,21 +21,25 @@ public class Makanan extends BendaMati {
 
   /**
    * Setter edible.
-   * Set status apakah bisa dimakan.
+   * @param b condition of edible.
    */
   public void setEdible(boolean b) {
     edible = b;
   }
 
   /**
-   * Implementasi Operator==.
+   * Implementing Operator==.
+   * @param m object that need to compared.
+   * @return true if Makanan == m.
    */
   public boolean isSama(Makanan m) {
     return (getX() == m.getX() && getY() == m.getY());
   }
-
+  
   /**
-   * Implementasi Operator!=.
+   * Implementing Operator!=.
+   * @param m object that need to compared.
+   * @return true if Makanan != m.
    */
   public boolean isBeda(Makanan m) {
     return (getX() != m.getX() || getY() != m.getY());
