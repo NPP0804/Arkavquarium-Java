@@ -10,7 +10,9 @@ public class Akuarium {
     public static final int SCREEN_WIDTH = 640;
     public static final int SCREEN_HEIGHT = 480;
 
-
+    /**
+     * Class default constructor
+     */
     public Akuarium(){
         ukuranX = SCREEN_WIDTH;
         ukuranY = SCREEN_HEIGHT;
@@ -19,9 +21,13 @@ public class Akuarium {
         listKoin = new List<>();
         listMakanan = new List<>();
         s = new Siput();
-
     }
 
+    /**
+     * Class constructor with two parameters
+     * @param x absis screen size
+     * @param y ordinate screen size
+     */
     public Akuarium(int x, int y){
         ukuranX = x;
         ukuranY = y;
@@ -32,41 +38,92 @@ public class Akuarium {
         s = new Siput();
     }
 
-    //Getter
+    /**
+     * Getter for absis screen size
+     * @return ukuranX instance of integer
+     */
     public int getX(){
         return ukuranX;
     }
+
+    /**
+     * Getter for ordinate screen size
+     * @return ukuranY instance of integer
+     */
     public int getY(){
         return ukuranY;
     }
-    //Mengambil suatu list dari suatu petak dari matriks[x,y]
+
+    /**
+     * Getter for list of makanan
+     * @return listMakanan instance of List<Makanan>
+     */
     public List<Makanan> getListMakanan(){
         return listMakanan;
     }
+
+    /**
+     * Getter for list of guppy
+     * @return listGuppy instance of List<Guppy>
+     */
     public List<Guppy> getListGuppy(){
         return listGuppy;
     }
+
+    /**
+     * Getter for list of piranha
+     * @return listPiranha instance of List<Piranha>
+     */
     public List<Piranha> getListPiranha(){
         return listPiranha;
     }
+
+    /**
+     * Getter for list of koin
+     * @return listKoin instance of List<Koin>
+     */
     public List<Koin> getListKoin(){
         return listKoin;
     }
+
+    /**
+     * Getter for siput
+     * @return s instance of Siput
+     */
     public Siput getSiput(){
         return s;
     }
 
-    //Searcher
+    /**
+     * Search whether koin is available or not
+     * @return availability koin in Akuarium, instance of boolean
+     */
     public boolean koinAvailable(){
         return !listKoin.isEmpty();
     }
+
+    /**
+     * Search whether guppy is available or not
+     * @return availability guppy in Akuarium, instance of boolean
+     */
     public boolean guppyAvailable(){
         return !listGuppy.isEmpty();
     }
+
+    /**
+     * Search whether makanan is available or not
+     * @return availability makanan in Akuarium, instance of boolean
+     */
     public boolean makananAvailable(){
         return !listMakanan.isEmpty();
     }
 
+    /**
+     * Search nearest Makanan instance from certain coordinate
+     * @param x absis of a coordinate
+     * @param y ordinate of a coordinate
+     * @return object instance of Makanan which has nearest position to coordinate x,y
+     */
     public Makanan searchMakanan(double x, double y){
         Element<Makanan> temp = listMakanan.first;
         Makanan m = temp.info;
@@ -80,8 +137,14 @@ public class Akuarium {
             }
         }
         return m;
-    } //Mengembalikan makanan terdekat dari x y yang terdapat makanan
+    }
 
+    /**
+     * Search nearest Guppy instance from certain coordinate
+     * @param x absis of a coordinate
+     * @param y ordinate of a coordinate
+     * @return object instance of Guppy which has nearest position to coordinate x,y
+     */
     public Guppy searchGuppy(double x, double y){
         Element<Guppy> temp = listGuppy.first;
         double jarak = Math.sqrt(Math.pow(x-temp.info.getX(), 2) + Math.pow(y-temp.info.getY(), 2));
@@ -94,8 +157,14 @@ public class Akuarium {
             }
         }
         return g;
-    }  //Mengembalikan guppy terdekat dari x y yang terdapat Guppy
+    }
 
+    /**
+     * Search nearest Koin instance from certain coordinate
+     * @param x absis of a coordinate
+     * @param y ordinate of a coordinate
+     * @return object instance of Koin which has nearest position to coordinate x,y
+     */
     public Koin searchKoin(double x, double y){
         Element<Koin> temp = listKoin.first;
         double jarak = Math.sqrt(Math.pow(x-temp.info.getX(), 2) + Math.pow(y-temp.info.getY(), 2));
@@ -108,14 +177,20 @@ public class Akuarium {
             }
         }
         return k;
-    } //Mengembalikan koin terdekat dari x y yang terdapat Koin
+    }
 
+    /**
+     * Method for updating every object state in Akuarium
+     */
     public void updateAkuarium(){
         updateMakanan();
         updatePiranha();
         updateGuppy();
     }
 
+    /**
+     * Method for updating every instance of makanan state in Akuarium
+     */
     public void updateMakanan(){
         if(!listMakanan.isEmpty()){
             Element<Makanan> temp = listMakanan.first;
@@ -129,7 +204,11 @@ public class Akuarium {
             } while(temp != null);
         }
     }
-    public void updatePiranha(){
+
+    /**
+     * Method for updating every instance of guppy state in Akuarium
+     */
+    public void updateGuppy(){
         if(!listGuppy.isEmpty()){
             Element<Guppy> temp = listGuppy.first;
             do{
@@ -156,7 +235,11 @@ public class Akuarium {
             } while(temp != null);
         }
     }
-    public void updateGuppy(){
+
+    /**
+     * Method for updating every instance of piranha state in Akuarium
+     */
+    public void updatePiranha(){
         if(!listPiranha.isEmpty()){
             Element<Piranha> temp = listPiranha.first;
             do{
